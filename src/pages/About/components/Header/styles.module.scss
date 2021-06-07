@@ -1,0 +1,108 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url(../../../../assets/images/background1.png) center no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    max-width: 1300px;
+    width: 100%;
+    height: calc(100% - 50px);
+    padding: 25px 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 25%;
+}
+
+.navigation {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    align-items: center;
+}
+
+.navigationLink {
+    font-family: 'Akrobat-SemiBold';
+    font-size: 20px;
+    letter-spacing: 4%;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.navigationLink :hover {
+    transform: scaleX(1);
+    transition: 1,5s;
+    border-bottom: 2px solid #FFC940;
+}
+
+.navigationButton {
+    font-family: 'Akrobat-SemiBold';
+    font-size: 23px;
+    padding: 10px 20px 10px 15px;
+    color: #fff;
+    background-color: #FFB800;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border:none;
+    height: fit-content;
+}
+
+.navigationButton img {
+    margin-right: 5px;
+}
+
+.navigationText {
+    font-family: 'Akrobat-SemiBold';
+    font-size: 20px;
+    color: #fff;
+}
+
+.body {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyButton {
+    margin-top: 30px;
+    font-family: 'Akrobat-Bold';
+    font-size: 24px;
+    padding: 10px 50px;
+    color: #7D241E;
+    background-color: #FFB800;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footerButton {
+    background: none;
+    outline: none;
+    border: none;
+}

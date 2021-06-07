@@ -1,0 +1,342 @@
+.container {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper {
+    width: 100%;
+    height: 100vh;
+}
+
+.firstSlide {
+    height: 100vh;
+    width: 100%;
+    background: url(../../../../assets/images/background1.png) center no-repeat;
+    background-size: cover;
+}
+
+.secondSlide {
+    height: 100vh;
+    width: 100%;
+    background: url(../../../../assets/images/background2.png) center no-repeat;
+    background-size: cover;
+}
+
+.thirdSlide {
+    height: 100vh;
+    width: 100%;
+    background: url(../../../../assets/images/background3.png) center no-repeat;
+    background-size: cover;
+}
+
+.gradient {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    height: 176px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -122.48%, rgba(77, 77, 77, 0) 33.02%, rgba(0, 0, 0, 0.62) 67.44%);
+}
+
+.wrapper {
+    display: none;
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    height: 94vh;
+    padding: 45px 50px 30px 80px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 25%;
+}
+
+.navigation {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    align-items: center;
+}
+
+.navigationLink {
+    font-family: 'Akrobat-SemiBold';
+    font-size: 20px;
+    letter-spacing: 4%;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.navigation :hover {
+    transform: scaleX(1);
+    transition: 1,5s;
+    border-bottom: 2px solid #FFC940;
+}
+
+.navigationButton {
+    font-family: 'Akrobat-SemiBold';
+    font-size: 23px;
+    padding: 10px 20px 10px 15px;
+    color: #fff;
+    background-color: #FFB800;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    border:none;
+    height: fit-content;
+    text-decoration: none;
+}
+
+.navigationButton img {
+    margin-right: 5px;
+}
+
+.navigationText {
+    font-family: 'Akrobat-SemiBold';
+    font-size: 20px;
+    color: #fff;
+}
+
+.burgerMenu {
+    display: none;
+}
+
+.body {
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyButton {
+    margin-top: 30px;
+    font-family: 'Akrobat-Bold';
+    font-size: 24px;
+    padding: 10px 50px;
+    color: #7D241E;
+    background-color: #FFB800;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.footer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.companyContentBlock {
+    display: flex;
+    align-items: center;
+}
+
+.companyContentBlock div {
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    font-family: 'Akrobat-SemiBold';
+    font-size: 24px;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.linkBlock {
+    display: flex;
+    align-items: center; 
+}
+
+.linkBlock div {
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    margin-right: 40px;
+}
+
+.modalButton {
+    background: none;
+    outline: none;
+    border:none;
+}
+
+.burgerMenu {
+    display: none;
+}
+
+@media screen and (max-width: 1199px) {
+    .wrapper {
+        max-width: 1199px;
+        margin:  0 auto;
+        padding: 30px 0 40px 75px;
+    }
+
+    header {
+        max-width: 900px;
+    }
+
+    .logo {
+        width: fit-content;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .navigation {
+        width:80%;
+    }
+
+    .navigationLink {
+        font-size: 17px;
+    }
+
+    .navigationButton {
+        padding: 6px 12px;
+        font-size: 20px;
+    }
+
+    .buttonImg {
+        width: 17px;
+    }
+
+    .navigationText {
+        font-size: 17px;
+    }
+
+    .body {
+        max-width: 900px;
+    }
+
+    .body img {
+        width: 180px;
+    }
+
+    .bodyButton {
+        font-size: 20px;
+        margin-top: 20px;
+        padding: 10px 40px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    footer {
+        max-width: 900px;
+    }
+
+    .socialImg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .modalButton img {
+        width: 65px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .wrapper {
+        max-width: 901px;
+        padding: 45px 0 0 0 ;
+    }
+
+    header {
+        max-width: 768px;
+    }
+
+    .navigationText {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper{
+        max-width: 535px;
+        padding: 20px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .burgerMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .companyContentBlock {
+        display: none;
+    }
+
+    .footer {
+        justify-content: flex-end;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .linkBlock {
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .wrapper {
+        max-width: 535px;
+        padding: 20px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .burgerMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .companyContentBlock {
+        display: none;
+    }
+
+    .footer {
+        justify-content: flex-end;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .linkBlock {
+        align-items: flex-end;
+    }
+}

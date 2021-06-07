@@ -1,0 +1,55 @@
+.card {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 60px 50px 60px;
+    background: #F9F9F9;
+    box-shadow: 0px 9px 22px rgba(0, 0, 0, 0.21);
+    border-radius: 13px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 500ms;
+    position: relative;
+}
+
+.img {
+    width: fit-content;
+}
+
+.title {
+    font-family: 'Akrobat-Bold' ;
+    font-size: 36px;
+    margin: 25px 0 20px 0;
+
+}
+
+.area {
+    font-family: 'Akrobat-SemiBold';
+    font-size: 29px;
+    color: #4F4F4F;
+}
+
+.description {
+    font-family: 'Akrobat-Thin';
+    margin: 35px 0 25px 0;
+    font-size: 24px;
+    color: #000000;
+}
+
+.link {
+    font-family: 'Akrobat-SemiBold';
+    font-size: 30px;
+    color: #7D241E;
+    background: #FFB800;
+    border-radius: 109px;
+    padding: 15px 65px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px 65px;
+    text-decoration: none;
+}

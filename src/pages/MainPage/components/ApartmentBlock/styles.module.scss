@@ -1,0 +1,498 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 50px 0 0 0 ;
+}
+
+.wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.headerBlock {
+    text-transform: uppercase;
+}
+
+.title {
+    font-family: 'Akrobat-Bold';
+    color: #7D241E;
+    font-size: 30px;
+    margin-bottom: 30px;
+    border-top: #7D241E 3px solid;
+    width: fit-content;
+}
+
+.actionBlock {
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+
+.flatChoose {
+    display: flex;
+    align-items: inherit;
+    width: 40%;
+}
+
+.flatChooseTitle {
+    font-family: 'Akrobat-Bold';
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #7D241E;
+    margin: 0 55px 0 0;
+}
+
+.flatChooseButton {
+    font-family: 'Akrobat-Black';
+    font-size: 29px;
+    color: #7D241E;
+    padding: 18px 30px;
+    border-radius: 50%;
+    outline: none;
+    background: rgba(255, 184, 0, 0.14);
+    cursor: pointer;
+    border: none;
+    margin-right: 33px;
+}
+
+.activeFlatChooseButton {
+    background: rgba(255, 184, 0, 0.44);
+    border: 2px solid #7D241E;
+}
+
+.planChoose {
+    display: flex;
+    width: 60%;
+}
+
+.planChooseButton {
+    font-family: 'Akrobat-Bold';
+    font-size: 26px;
+    text-transform: uppercase;
+    color: #7D241E;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.activePlanChooseButton {
+    text-decoration: underline #FFB800 2px solid;
+}
+
+.slide {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    margin: 115px 0 50px 0;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text {
+    font-family: 'Akrobat-Regular';
+    font-size: 29px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    span {
+        font-family: 'Akrobat-ExtraBold';
+        font-size: 29px;
+        padding-left: 20px;
+        text-transform: none;
+    }
+}
+
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: 300px !important;
+    left: auto;
+}
+
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: 300px !important;
+    right: auto;
+}
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerBlock {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.footerButton {
+    font-family: 'Akrobat-Bold';
+    font-size: 24px;
+    color: #7D241E;
+    padding: 16px 46px;
+    outline: none;
+    border: none;
+    background: #FFB800;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 30px;
+    width: fit-content;
+}
+
+.download {
+    font-family: 'Akrobat-Bold';
+    font-size: 24px;
+    color: #7D241E;
+    padding: 16px 66px;
+    outline: none;
+    border: none;
+    background: #FFFFFF;
+    cursor: pointer;
+    text-decoration: none;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1199px) {
+    .wrapper {
+        max-width: 992px;
+    }
+
+    .headerBlock {
+        padding: 0 0 0 20px;
+    }
+
+    .title {
+        font-size: 23px;
+        margin: 0;
+    }
+
+    .actionBlock {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flatChoose {
+        margin: 20px 0;
+    }
+
+    .flatChooseTitle {
+        font-size: 21px;
+    }
+
+    .flatChooseButton {
+        font-size: 20px;
+        padding: 10px 19px;
+        margin: 0 10px;
+    }
+
+    .planChoose {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .planChooseButton {
+        font-size: 21px;
+        margin: 0 40px;
+    }
+
+    .slide {
+        margin: 40px 0;
+    }
+
+    .text {
+        font-size: 23px;
+        margin: 4px 0;
+        span {
+            font-size: 23px;
+        }
+    }
+
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+        left: 60px !important;
+        right: auto;
+    }
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        right: 60px !important;
+        left: auto;
+    }
+
+    .imgBlock img {
+        width: 450px;
+    }
+
+    .footerBlock {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .footerButton {
+        margin: 0;
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .wrapper {
+        max-width: 768px;
+    }
+
+    .headerBlock {
+        padding: 0 0 0 20px;
+    }
+
+    .title {
+        font-size: 23px;
+        margin: 0;
+    }
+
+    .actionBlock {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flatChoose {
+        margin: 20px 0;
+    }
+
+    .flatChooseTitle {
+        font-size: 21px;
+    }
+
+    .flatChooseButton {
+        font-size: 20px;
+        padding: 10px 19px;
+        margin: 0 10px;
+    }
+
+    .planChoose {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .planChooseButton {
+        font-size: 21px;
+        margin: 0 40px;
+    }
+
+    .slide {
+        margin: 40px 0;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .text {
+        font-size: 23px;
+        margin: 4px 0;
+        span {
+            font-size: 23px;
+        }
+    }
+
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+        left: 60px !important;
+        right: auto;
+    }
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        right: 60px !important;
+        left: auto;
+    }
+
+    .imgBlock img {
+        width: 400px;
+    }
+
+    .block {
+        display: none;
+    }
+
+    .footerBlock {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .footerButton {
+        margin: 0;
+        font-size: 21px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+        max-width: 576px;
+    }
+
+    .headerBlock {
+        padding: 0 0 0 20px;
+    }
+
+    .title {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .actionBlock {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flatChoose {
+        margin: 20px 0;
+    }
+
+    .flatChooseTitle {
+        font-size: 18px;
+    }
+
+    .flatChooseButton {
+        font-size: 20px;
+        padding: 10px 19px;
+        margin: 0 10px;
+    }
+
+    .planChoose {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .planChooseButton {
+        font-size: 18px;
+        margin: 0 40px;
+    }
+
+    .slide {
+        margin: 40px 0;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .text {
+        font-size: 20px;
+        margin: 4px 0;
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+        left: 60px !important;
+        right: auto;
+    }
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        right: 60px !important;
+        left: auto;
+    }
+
+    .imgBlock img {
+        width: 300px;
+    }
+
+    .block {
+        display: none;
+    }
+
+    .footerBlock {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .footerButton {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .wrapper {
+        max-width: 575px;
+    }
+
+    .headerBlock {
+        padding: 0 0 0 20px;
+    }
+
+    .title {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .actionBlock {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flatChoose {
+        margin: 20px 0;
+    }
+
+    .flatChooseTitle {
+        font-size: 18px;
+    }
+
+    .flatChooseButton {
+        font-size: 20px;
+        padding: 10px 19px;
+        margin: 0 10px;
+    }
+
+    .planChoose {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .planChooseButton {
+        font-size: 16px;
+        margin: 0 40px;
+    }
+
+    .slide {
+        margin: 40px 0;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .text {
+        font-size: 18px;
+        margin: 4px 0;
+        span {
+            font-size: 18px;
+        }
+    }
+
+    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+        left: 60px !important;
+        right: auto;
+    }
+    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+        right: 60px !important;
+        left: auto;
+    }
+
+    .imgBlock img {
+        width: 219px;
+    }
+
+    .block {
+        display: none;
+    }
+
+    .footerBlock {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .footerButton {
+        margin: 0;
+        font-size: 18px;
+    }
+}

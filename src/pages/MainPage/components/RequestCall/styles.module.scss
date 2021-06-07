@@ -1,0 +1,206 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 0 200px 0;
+}
+
+.wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerBlock {
+    display: flex;
+    flex-direction: row;
+}
+
+.logo {
+    width: 20%;
+    margin-right: 50px;
+}
+
+.body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.textBlock {
+    padding: 40px 0 50px 0 ;
+}
+
+.title {
+    font-family: 'Akrobat-SemiBold';
+    font-size: 48px;
+    color: #CCB58A;
+    margin: 0 0 40px 0;
+}
+
+.subTitle {
+    font-family: 'Akrobat-Regular';
+    font-size: 24px;
+    color: #000;
+}
+
+.actionBlock {
+    display: flex;
+    align-items: flex-end;
+}
+
+.inputBlock {
+    margin: 0 25px 0 0;
+}
+
+.text {
+    font-family: 'Akrobat-Regular';
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+
+input {
+    padding: 10px 80px 10px 15px;
+    border: 0.5px solid #000000;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: #6C6C6C;
+    font-size: 18px;
+}
+
+.bodyButton {
+    height: fit-content;
+    font-family: 'Akrobat-Bold';
+    padding: 8px 60px ;
+    font-size: 26px;
+    color: #7D241E;
+    background: #FFB800;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+@media screen and (max-width: 1199px) {
+    .wrapper {
+        max-width: 992px;
+    }
+
+}
+
+@media screen and (max-width: 991px) {
+    .wrapper {
+        max-width: 768px;
+    }
+    
+    .title {
+        font-size: 32px;
+    }
+
+    .actionBlock {
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .inputBlock {
+        margin:  0;
+    }
+
+    input {
+        padding: 10px 20px 10px 15px;
+    }
+
+    .inputBlock {
+        margin: 0 20px;
+    }
+
+    .bodyButton {
+        font-size: 24px;
+        padding: 8px 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        padding:  50px 0;
+    }
+
+    .wrapper {
+        max-width: 576px;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+
+    .subTitle {
+        font-size: 20px;
+    }
+
+    .actionBlock {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .inputBlock {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        padding: 20px 0;
+    }
+
+    .wrapper {
+        max-width: 575px;
+        justify-content: unset;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headerBlock {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .textBlock {
+        padding: 20px 0;
+    }
+
+    .title {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .subTitle {
+        font-size: 16px;
+    }
+
+    .actionBlock {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputBlock {
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+
+.CompanyDescription {
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgBlock {
+    width: 40%;
+}
+
+.textBlock {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    height: 40%;
+    font-family: 'Akrobat-ExtraBold';
+    color: #424242;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+.descriptionBlock {
+    height: 60%;
+    display: flex;
+    flex-direction: inherit;
+    justify-content: space-between;
+    font-family: 'Akrobat-Regular';
+    color: #424242;
+    font-size: 24px;
+}

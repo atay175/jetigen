@@ -1,0 +1,203 @@
+.container {
+    width: 100%;
+    background: #7D241E;
+    height: 500px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentBlockOne {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    color: #FFFFFF;
+
+}
+
+.title {
+    font-family: 'Akrobat-Bold';
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-family: "Akrobat-Regular";
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.contentBlockTwo {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    margin:0 0 15px 0;
+
+}
+
+.contactsText {
+    font-family: 'Akrobat-Regular';
+    font-size: 24px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    margin-left: 5px;
+
+}
+
+.button {
+    font-family: "Akrobat-ExtraBold";
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    background: #FFB800;
+    border-radius: 5px;
+    padding: 10px 40px;
+    width: fit-content;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.mobileLogo {
+    display: none;
+}
+
+.social {
+    display: none;
+}
+
+@media screen and (max-width: 1199px) {
+    .wrapper {
+        max-width: 992px;
+        padding: 0 40px;
+    }
+
+    .contentBlockOne {
+        width: 55%;
+    }
+
+    .contentBlockTwo {
+        width: 30%;
+    }
+
+    .logoImg {
+        width: 120px;
+    }
+
+    .title {
+        font-size: 21px;
+    }
+
+    .text {
+        font-size: 21px;
+    }
+
+    .contactsText {
+        font-size: 21px;
+    }
+
+    .button {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .wrapper {
+        max-width: 768px;
+        padding: 0 20px;
+    }
+
+    .logoImg {
+        width: 90px;
+    }
+
+    .contentBlockTwo {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+        max-width: 576px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contentBlockOne {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .title {
+        font-size: 17px;
+    }
+
+    .text {
+        font-size: 17px;
+    }
+
+    .contentBlockTwo {
+        width: 40%;
+    }
+
+    .contactsText {
+        font-size: 17px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 10px 30px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .wrapper {
+        max-width: 574px;
+    }
+
+  
+    .contentBlockOne {
+        display: none;
+    }
+
+    .contentBlockTwo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mobileLogo {
+        display: block;
+        width: 74px;
+        margin-bottom: 15px;
+    }
+
+    .social {
+        display: block;
+        margin-top: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .socialLink {
+        margin: 0 20px;
+    }
+}

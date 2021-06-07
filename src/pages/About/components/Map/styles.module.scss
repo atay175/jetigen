@@ -1,0 +1,51 @@
+.container {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.wrapper {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+    background: #696969;
+    opacity: 0.8;
+    border-radius: 3px;
+    position: absolute;
+    padding: 30px 30px 30px 70px;
+    z-index: 1;
+}
+
+.tittle {
+    font-family: 'Akrobat-Bold';
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.number {
+    display: flex;
+}
+
+.number p {
+    margin-left: 10px;
+    font-family: 'Akrobat-Bold';
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+.text {
+    font-family: 'Akrobat-Bold';
+    font-size: 22.247px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    margin-right: 30px;
+}

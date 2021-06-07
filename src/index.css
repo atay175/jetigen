@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Akrobat-Black';
+  src: url(./assets/fonts/Akrobat-Black.otf);
+}
+
+@font-face {
+  font-family: 'Akrobat-Bold';
+  src: url(./assets/fonts/Akrobat-Bold.otf);
+}
+
+@font-face {
+  font-family: 'Akrobat-ExtraBold';
+  src: url(./assets/fonts/Akrobat-ExtraBold.otf);
+}
+
+@font-face {
+  font-family: 'Akrobat-ExtraLight';
+  src: url(./assets/fonts/Akrobat-ExtraLight.otf);
+}
+
+@font-face {
+  font-family: 'Akrobat-Regular';
+  src: url(./assets/fonts/Akrobat-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Akrobat-SemiBold';
+  src: url(./assets/fonts/Akrobat-SemiBold.otf);
+}
+
+@font-face {
+  font-family: 'Akrobat-Thin';
+  src: url(./assets/fonts/Akrobat-Thin.otf);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  outline: none;
+  cursor: pointer;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+p, h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+

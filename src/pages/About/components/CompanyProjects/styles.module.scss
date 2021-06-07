@@ -1,0 +1,130 @@
+.container {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.tittleBlock {
+    text-align: center;
+}
+
+.title {
+    font-family: 'Akrobat-Bold';
+    font-size: 64px;
+    text-transform: uppercase;
+    color: #424242;
+}
+
+.subTitle {
+    font-family: 'Akrobat-Regular';
+    font-size: 24px;
+    color: #000;
+}
+
+.slider {
+    margin: 100px 0;
+    width: 100%;
+}
+
+.blur {
+    width: 487px;
+    height: 347px;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(97, 97, 97, 0.54) 0%, rgba(0, 0, 0, 0.46) 51.3%, rgba(40, 40, 40, 0.2) 100%);
+    border-radius: 8px;
+}
+
+.cardOne {
+    background: url(../../../../assets/images/logoBackground1.png) center;
+    margin: 20px 0;
+    // padding: 100px 120px 30px 120px;
+    width: 487px;
+    height: 347px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardTwo {
+    background: url(../../../../assets/images/logoBackground2.png) center;
+    margin: 20px 0;
+    // padding: 100px 120px 30px 120px;
+    width: 487px;
+    height: 347px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardThree {
+    background: url(../../../../assets/images/logoBackground3.png) center;
+    margin: 20px 0;
+    // padding: 100px 120px 30px 120px;
+    width: 487px;
+    height: 347px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardFour {
+    background: url(../../../../assets/images/logoBackground4.png) center;
+    margin: 20px 0;
+    // padding: 100px 120px 30px 120px;
+    width: 487px;
+    height: 347px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardFive {
+    background: url(../../../../assets/images/logoBackground5.png) center;
+    margin: 20px 0;
+    // padding: 100px 120px 30px 120px;
+    width: 487px;
+    height: 347px;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    margin-top: 25px;
+    font-family: "Akrobat-SemiBold";
+    font-size: 26px;
+    line-height: 24px;
+    color: #7D241E;
+    outline: none;
+    border: none;
+    background: #FFB800;
+    border-radius: 5px;
+    padding: 12px 65px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
