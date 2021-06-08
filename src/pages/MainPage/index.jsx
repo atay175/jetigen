@@ -5,7 +5,7 @@ import About from './components/About'
 import ApartmentBlock from './components/ApartmentBlock'
 import Location from './components/Location'
 import RequestCall from './components/RequestCall'
-import Map from './components/Map'
+import Map from '../../components/Map'
 import Footer from '../../components/Footer'
 
 function MainPage() {
