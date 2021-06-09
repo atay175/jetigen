@@ -1,4 +1,11 @@
-import { Link } from 'react-router-dom'
+import { 
+        Link,
+        BrowserRouter as Router,
+        Switch,
+        Route,
+        useRouteMatch,
+        useParams
+} from 'react-router-dom'
 import React, { useState } from 'react'
 import styles from './styles.module.scss'
 import AAALogo from '../../../../assets/images/AAALogo.png'
@@ -18,6 +25,8 @@ import 'swiper/components/pagination/pagination.scss'
 import 'swiper/components/scrollbar/scrollbar.scss'
 import burgerIcon from '../../../../assets/icons/burgerMenu.svg'
 import BurgerMenu from '../../../../components/BurgerMenu'
+import helpers from '../../../../utils/helpers/index.js'
+import About from '../../../About/components/CompanyDescription'
 
 SwiperCore.use([Navigation, Pagination, Autoplay, A11y])
 
@@ -28,37 +37,44 @@ function Header() {
     const [burgerMenuActive, setBurgerMenuActive] = useState(false)
     return (
         <div className={styles.container}>
-
                 <Swiper className={styles.swiper}
                     spaceBetween={0}
                     slidesPerView={1}
-                    navigation
                     pagination={{ clickable: true }}
                     onSwiper={(swiper) => console.log(swiper)}
                     onSlideChange={() => console.log('slide change')}
-                    Autoplay= {true}
+                    autoplay= {{
+                        delay: 5000,
+                        disableOnInteraction: false
+                    }}
                     >
                         <SwiperSlide><div className={styles.firstSlide}> </div></SwiperSlide>
                         <SwiperSlide><div className={styles.secondSlide}> </div></SwiperSlide>
                         <SwiperSlide><div className={styles.thirdSlide}> </div></SwiperSlide>
                 </Swiper>
-
             <div className={styles.wrapper}>
                 <header>
                     <div className={styles.logo}>
                         <img src={AAALogo} alt="" />
                     </div>
                     <div className={styles.navigation}>
-                        <a className={styles.navigationLink} href="#">о компании</a>
+                        <Router>
+                            <Switch>
+                            <Route path='../../../About/components/CompanyDescription' >
+                                <Link to='../../../About/index.jsx' className={styles.navigationLink}>о компании</Link>
+                                <About />
+                            </Route>
+                            </Switch>
+                  
+                        </Router>
+                        {/* <Link to='../../../About/index.jsx' className={styles.navigationLink}>о компании</Link> */}
                         <Link to='../../../About/index.jsx' className={styles.navigationLink}>жетиген</Link>
-                        <a className={styles.navigationLink} href="#">проекты</a>
-                        <a className={styles.navigationLink} href="#">контакты</a>
+                        <Link to='../../../About/index.jsx' className={styles.navigationLink}>проекты</Link>
+                        <Link onClick={helpers} className={styles.navigationLink}>контакты</Link>
                         <button className={styles.navigationButton} onClick={() => setModalActive(true)}><img className={styles.buttonImg} src={requestcallSmall} alt="" />Заказать звонок</button>
                         <p className={styles.navigationText}>+996 509 505 508<br /> +996 559 505 508</p>
                     </div>
-
                     <div className={styles.burgerMenu} onClick={() => setBurgerMenuActive(true)}><img src={burgerIcon} alt="" /></div>
-
                 </header>
                 <div className={styles.body}>
                     <img src={jetigenlogo} alt="" />
@@ -75,12 +91,11 @@ function Header() {
                         <button className={styles.modalButton}><img src={requestcallBig} onClick={() => setModalActive(true)} alt="" /></button>
                     </div>
                 </footer>
-            </div>
 
+            </div>
+            <div className={styles.gradient} />
             <BurgerMenu active={burgerMenuActive} setActive={setBurgerMenuActive} />
             <Modal active={modalActive} setActive={setModalActive}/>
-
-            <div className={styles.gradient}></div>
         </div>
     )
 }

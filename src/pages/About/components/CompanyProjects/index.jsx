@@ -16,14 +16,11 @@ function CompanyProjects() {
 
     return (
         <div className={styles.container}>
-
             <div className={styles.wrapper}>
-
             <div className={styles.tittleBlock}>
               <h1 className={styles.title}>наши проекты</h1>
               <p className={styles.subTitle}>На протяжении 6 лет компания </p>
             </div>
-
             <div className={styles.slider}>
               <Swiper
                 spaceBetween={30}
@@ -90,9 +87,7 @@ function CompanyProjects() {
                 </SwiperSlide>
               </Swiper>
             </div>
-                
             </div>
-
         </div>
 
     )

@@ -6,7 +6,7 @@ import IMask from 'imask';
 const Modal = ({active, setActive}) => {
 
     function phoneMask () {
-        let element = document.getElementById('phoneMask');
+        let element = document.getElementsByClassName('phoneMask');
         let maskOptions = {
         mask: '+{996}(000)000-000'
         };
@@ -16,8 +16,8 @@ const Modal = ({active, setActive}) => {
     function addPost(e){
         e.preventDefault();
 
-        let userName = document.getElementById('userName').value;
-        let phoneNumber = document.getElementById('phoneMask').value;
+        let userName = document.getElementsByClassName('userName').value;
+        let phoneNumber = document.getElementsByClassName('phoneMask').value;
 
         fetch('https://jsonplaceholder.typicode.com/posts', {
             method:'POST',
@@ -35,7 +35,7 @@ const Modal = ({active, setActive}) => {
      <div 
         className={classNames(styles.modal, {
             [styles.active]: active
-        })} 
+        })}
         onClick={() => setActive(false)}
     >
          <div className={styles.wrapper}>
@@ -43,11 +43,24 @@ const Modal = ({active, setActive}) => {
                 <button className={styles.closeButton} onClick={() => setActive(false)}><img src={closeModal} alt="" /></button>
                 <div className={styles.inputBlock}>
                     <p className={styles.modalText}>Введите имя</p>
-                    <input className={styles.input} type="text" id="userName"  placeholder='Ваше имя'/>
+                    <input className={classNames(
+                         styles.input,
+                         styles.userName
+                    )} 
+                    type="text"
+                    placeholder='Ваше имя'
+                    />
                 </div>
                 <div className={styles.inputBlock}>
                     <p className={styles.modalText}>Введите номер телефона</p>
-                    <input className={styles.input} onClick={phoneMask} id="phoneMask" type="text"  placeholder='+996 _ _ _   _ _ _  _ _ _'/>
+                    <input className={classNames(
+                        styles.input,
+                        styles.phoneMask
+                    )} 
+                    onClick={phoneMask}
+                    type="text"  
+                    placeholder='+996 _ _ _   _ _ _  _ _ _'
+                    />
                 </div>
                 <button className={styles.modalButton} onClick={addPost}>Оставить заявку</button>
             </div>

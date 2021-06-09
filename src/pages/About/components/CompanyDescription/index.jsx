@@ -3,15 +3,12 @@ import companyDescriptioneIMG from '../../../../assets/images/companyDescription
 
 function CompanyDescription() {
     return (
-        <div className={styles.container}>
-
+        <div id={styles.aboutCompany} className={styles.container}>
             <div className={styles.wrapper}>
-
                 <div className={styles.CompanyDescription}>
                     <div className={styles.imgBlock}>
                         <div className={styles.img}><img src={companyDescriptioneIMG} alt="" /></div>
                     </div>
-                    
                     <div className={styles.textBlock}>
                         <h1 className={styles.title}> о компании</h1>
                         <div className={styles.descriptionBlock}>
@@ -20,9 +17,7 @@ function CompanyDescription() {
                         </div>
                     </div>
                 </div>
-                
             </div>
-
         </div>
     )
 }

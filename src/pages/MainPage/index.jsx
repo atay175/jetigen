@@ -11,11 +11,6 @@ import Footer from '../../components/Footer'
 function MainPage() {
     return (
         <div className={styles.container}>
-            {/* <p>as</p>
-            <Link to='/about'>about</Link>
-            <br />
-            <a href="/about">about</a> */}
-
             <Header />
 
             <About />

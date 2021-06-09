@@ -5,6 +5,7 @@ import requestcallBig from '../../../../assets/icons/requestcallBig.svg'
 import requestcallSmall from '../../../../assets/icons/requestcallSmall.svg'
 import React, { useState } from 'react'
 import Modal from '../../../../components/Modal'
+import { Link } from 'react-router-dom'
 
 function Header() {
     const [modalActive, setModalActive] = useState(false)
@@ -14,7 +15,7 @@ function Header() {
             <div className={styles.wrapper}>
                 <header>
                     <div className={styles.logo}>
-                        <img src={AAALogo} alt="" />
+                      <Link to='../../../MainPage/index.jsx'><img src={AAALogo} alt="" /></Link>  
                     </div>
                     <div className={styles.navigation}>
                         <a className={styles.navigationLink} href="#">о компании</a>
@@ -24,7 +25,6 @@ function Header() {
                         <button className={styles.navigationButton} onClick={() => setModalActive(true)}><img className={styles.requestcallSmall} src={requestcallSmall} alt="" />Заказать звонок</button>
                         <p className={styles.navigationText}>+996 509 505 508<br /> +996 559 505 508</p>
                     </div>
-
                 </header>
                 <div className={styles.body}>
                     <img src={jetigenlogo} alt="" />

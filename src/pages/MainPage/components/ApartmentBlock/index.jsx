@@ -116,7 +116,6 @@ function ApartmentBlock({flatNumber, area, img, }) {
                                 </div>
                             </div>
                         </div>
-
                 <Swiper
                     spaceBetween={0}
                     slidesPerView={1}

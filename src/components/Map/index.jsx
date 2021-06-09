@@ -1,8 +1,8 @@
 import { Component } from 'react'
 import styles from './styles.module.scss'
-import instagram from '../../../../assets/icons/instagram.svg'
-import facebook from '../../../../assets/icons/facebook.svg'
-import requestCall from '../../../../assets/icons/requestcallSmall.svg'
+import instagram from '../../assets/icons/instagram.svg'
+import facebook from '../../assets/icons/facebook.svg'
+import requestCall from '../../assets/icons/requestcallSmall.svg'
 import GoogleMapReact from 'google-map-react';
 
 

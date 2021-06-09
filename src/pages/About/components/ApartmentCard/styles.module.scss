@@ -1,3 +1,9 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .card {
     max-width: 600px;
     width: 100%;
@@ -16,8 +22,14 @@
     position: relative;
 }
 
+.card:hover {
+    transform: scale(0.9);
+    transition: .3s;
+}
+
 .img {
-    width: fit-content;
+    width: 330px;
+    height: 315px;
 }
 
 .title {

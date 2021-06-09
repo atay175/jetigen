@@ -45,10 +45,10 @@ header {
     text-transform: uppercase;
 }
 
-.navigationLink :hover {
-    transform: scaleX(1);
-    transition: 1,5s;
-    border-bottom: 2px solid #FFC940;
+.navigationLink:hover {
+    transition: .3s;
+    text-decoration: underline 1px solid #FFC940;
+
 }
 
 .navigationButton {
