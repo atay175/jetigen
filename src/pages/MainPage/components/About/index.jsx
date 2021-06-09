@@ -4,10 +4,14 @@ import logo from '../../../../assets/icons/jetigenGoldLogo.svg'
 import security from '../../../../assets/icons/security.svg'
 import playground from '../../../../assets/icons/playground.svg'
 import parking from '../../../../assets/icons/parking.svg'
+import aboutCircleTopRight from '../../../../assets/images/aboutCircleTopRight.png'
+import aboutCircleBottomLeft from '../../../../assets/images/aboutCircleBottomLeft.png'
 
 function About() {
     return (
         <div className={styles.container}>
+            {/* <img className={styles.aboutCircleTopRight} src={aboutCircleTopRight} alt="" />
+            <img className={styles.aboutCircleBottomLeft} src={aboutCircleBottomLeft} alt="" /> */}
             <div className={styles.wrapper}>
                 <div className={styles.header}>
                     <img className={styles.logo} src={logo} alt="" />
