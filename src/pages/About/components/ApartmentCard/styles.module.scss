@@ -4,6 +4,15 @@
     align-items: center;
 }
 
+.wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card {
     max-width: 600px;
     width: 100%;
@@ -20,6 +29,7 @@
     box-sizing: border-box;
     transition: transform 500ms;
     position: relative;
+    z-index: 1;
 }
 
 .card:hover {
@@ -64,4 +74,22 @@
     cursor: pointer;
     padding: 15px 65px;
     text-decoration: none;
+}
+
+.apartmentCardCircleTopRight {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.apartmentCardCircleMiddleLeft {
+    position: absolute;
+    top: 40%;
+    left: 0;
+}
+
+.apartmentCardCircleBottomRight {
+    position: absolute;
+    bottom: -150px;
+    right: 0;
 }

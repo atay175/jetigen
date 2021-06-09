@@ -12,6 +12,7 @@ import apartment3d51 from '../../assets/images/apartment3d51,39.png'
 import apartment3d43 from '../../assets/images/apartment3d43,19.png'
 import apartment3d32 from '../../assets/images/apartment3d32,89.png'
 
+
 function About() {
     const data = [
         {
@@ -53,22 +54,20 @@ function About() {
 
             <CompanyObjects />
             <div className={styles.cardWrapper}>
-                <div className={styles.wrapper}>
-                    <div className={styles.titleBlock}>
-                        <h1 className={styles.title}><span>квартиры</span> jetigen</h1>
-                    </div>
-                    <div className={styles.card}>
-                        <div className={styles.apartmentCards}>
-                            {data.map(item => 
-                                <ApartmentCard
-                                    apartmentScheme={item.apartmentScheme}
-                                    title={item.title}
-                                    area={item.area}
-                                    description={item.description}
-                                    link={item.link}
-                                />
-                            )}
-                        </div>
+                <div className={styles.titleBlock}>
+                    <h1 className={styles.title}><span>квартиры</span> jetigen</h1>
+                </div>
+                <div className={styles.card}>
+                    <div className={styles.apartmentCards}>
+                        {data.map(item => 
+                            <ApartmentCard
+                                apartmentScheme={item.apartmentScheme}
+                                title={item.title}
+                                area={item.area}
+                                description={item.description}
+                                link={item.link}
+                            />
+                        )}
                     </div>
                 </div>
             </div>
