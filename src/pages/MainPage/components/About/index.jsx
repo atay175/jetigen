@@ -10,8 +10,6 @@ import aboutCircleBottomLeft from '../../../../assets/images/aboutCircleBottomLe
 function About() {
     return (
         <div className={styles.container}>
-            {/* <img className={styles.aboutCircleTopRight} src={aboutCircleTopRight} alt="" />
-            <img className={styles.aboutCircleBottomLeft} src={aboutCircleBottomLeft} alt="" /> */}
             <div className={styles.wrapper}>
                 <div className={styles.header}>
                     <img className={styles.logo} src={logo} alt="" />
