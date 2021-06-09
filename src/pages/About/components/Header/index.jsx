@@ -14,13 +14,15 @@ function Header() {
         <div className={styles.container}>
             <div className={styles.wrapper}>
                 <header>
-                    <div className={styles.logo}>
-                      <Link to='../../../MainPage/index.jsx'><img src={AAALogo} alt="" /></Link>  
-                    </div>
+                    <Link className={styles.linkToMainPage} to='/'>
+                        <div className={styles.logo}>
+                            <img src={AAALogo} alt="" />  
+                        </div>
+                    </Link>
                     <div className={styles.navigation}>
                         <a className={styles.navigationLink} href="#">о компании</a>
                         <a className={styles.navigationLink} href="#">жетиген</a>
-                        <a className={styles.navigationLink} href="#">проекты</a>
+                        <Link to='/projects' className={styles.navigationLink}>проекты</Link>
                         <a className={styles.navigationLink} href="#">контакты</a>
                         <button className={styles.navigationButton} onClick={() => setModalActive(true)}><img className={styles.requestcallSmall} src={requestcallSmall} alt="" />Заказать звонок</button>
                         <p className={styles.navigationText}>+996 509 505 508<br /> +996 559 505 508</p>

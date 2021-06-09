@@ -1,11 +1,4 @@
-import { 
-        Link,
-        BrowserRouter as Router,
-        Switch,
-        Route,
-        useRouteMatch,
-        useParams
-} from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import React, { useState } from 'react'
 import styles from './styles.module.scss'
 import AAALogo from '../../../../assets/images/AAALogo.png'
@@ -25,8 +18,6 @@ import 'swiper/components/pagination/pagination.scss'
 import 'swiper/components/scrollbar/scrollbar.scss'
 import burgerIcon from '../../../../assets/icons/burgerMenu.svg'
 import BurgerMenu from '../../../../components/BurgerMenu'
-import helpers from '../../../../utils/helpers/index.js'
-import About from '../../../About/components/CompanyDescription'
 
 SwiperCore.use([Navigation, Pagination, Autoplay, A11y])
 
@@ -48,9 +39,9 @@ function Header() {
                         disableOnInteraction: false
                     }}
                     >
-                        <SwiperSlide><div className={styles.firstSlide}> </div></SwiperSlide>
-                        <SwiperSlide><div className={styles.secondSlide}> </div></SwiperSlide>
-                        <SwiperSlide><div className={styles.thirdSlide}> </div></SwiperSlide>
+                        <SwiperSlide><div className={styles.firstSlide} /></SwiperSlide>
+                        <SwiperSlide><div className={styles.secondSlide} /></SwiperSlide>
+                        <SwiperSlide><div className={styles.thirdSlide} /></SwiperSlide>
                 </Swiper>
             <div className={styles.wrapper}>
                 <header>
@@ -58,19 +49,10 @@ function Header() {
                         <img src={AAALogo} alt="" />
                     </div>
                     <div className={styles.navigation}>
-                        <Router>
-                            <Switch>
-                            <Route path='../../../About/components/CompanyDescription' >
-                                <Link to='../../../About/index.jsx' className={styles.navigationLink}>о компании</Link>
-                                <About />
-                            </Route>
-                            </Switch>
-                  
-                        </Router>
-                        {/* <Link to='../../../About/index.jsx' className={styles.navigationLink}>о компании</Link> */}
-                        <Link to='../../../About/index.jsx' className={styles.navigationLink}>жетиген</Link>
-                        <Link to='../../../About/index.jsx' className={styles.navigationLink}>проекты</Link>
-                        <Link onClick={helpers} className={styles.navigationLink}>контакты</Link>
+                        <Link to='/company' className={styles.navigationLink}>о компании</Link>
+                        <Link to='/about' className={styles.navigationLink}>жетиген</Link>
+                        <Link to='/projects' className={styles.navigationLink}>проекты</Link>
+                        <Link to='/contacts' className={styles.navigationLink}>контакты</Link>
                         <button className={styles.navigationButton} onClick={() => setModalActive(true)}><img className={styles.buttonImg} src={requestcallSmall} alt="" />Заказать звонок</button>
                         <p className={styles.navigationText}>+996 509 505 508<br /> +996 559 505 508</p>
                     </div>

@@ -3,7 +3,7 @@ import companyDescriptioneIMG from '../../../../assets/images/companyDescription
 
 function CompanyDescription() {
     return (
-        <div id={styles.aboutCompany} className={styles.container}>
+        <div id="aboutCompany" className={styles.container}>
             <div className={styles.wrapper}>
                 <div className={styles.CompanyDescription}>
                     <div className={styles.imgBlock}>

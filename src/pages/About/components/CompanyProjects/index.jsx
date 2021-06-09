@@ -15,7 +15,7 @@ SwiperCore.use([Navigation, Scrollbar, A11y]);
 function CompanyProjects() {
 
     return (
-        <div className={styles.container}>
+        <div id="projects" className={styles.container}>
             <div className={styles.wrapper}>
             <div className={styles.tittleBlock}>
               <h1 className={styles.title}>наши проекты</h1>

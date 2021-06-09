@@ -1,6 +1,7 @@
+import { useEffect } from 'react'
 import styles from './styles.module.scss'
 import Header from './components/Header/'
-import CompanyDescriptione from './components/CompanyDescription'
+import CompanyDescription from './components/CompanyDescription'
 import CompanyObjects from './components/CompanyObjects'
 import CompanyProjects from './components/CompanyProjects'
 import RequestCall from './components/RequestCall'
@@ -11,7 +12,8 @@ import apartment3d54 from '../../assets/images/apartment3d54,76.png'
 import apartment3d51 from '../../assets/images/apartment3d51,39.png'
 import apartment3d43 from '../../assets/images/apartment3d43,19.png'
 import apartment3d32 from '../../assets/images/apartment3d32,89.png'
-
+import { clickToAboutCompanyBlock, clickToContcatsBlock, clickToCompanyProjectsBlock, clickToCompanyObjectsBlock } from '../../utils/helpers'
+import { useParams } from 'react-router-dom'
 
 function About() {
     const data = [
@@ -45,14 +47,28 @@ function About() {
         }
     ]
 
+    const { component } = useParams()
+
+    useEffect(() => {
+        if (component === 'company') {
+            clickToAboutCompanyBlock()
+        } else if (component === 'projects') {
+            clickToCompanyProjectsBlock()
+        } else if (component === 'contacts') { 
+            clickToContcatsBlock()
+        } else if (component === 'objects') {
+            clickToCompanyObjectsBlock()
+        }
+    }, [])
+
+    console.log(component)
 
     return (
         <div className={styles.container}>
             <Header />
-
-            <CompanyDescriptione />
-
+            <CompanyDescription />
             <CompanyObjects />
+
             <div className={styles.cardWrapper}>
                 <div className={styles.titleBlock}>
                     <h1 className={styles.title}><span>квартиры</span> jetigen</h1>
@@ -72,13 +88,9 @@ function About() {
                 </div>
             </div>
       
-
             <CompanyProjects />
-
             <RequestCall />
-
             <Map />
-
             <Footer />
         </div>
     )

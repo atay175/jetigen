@@ -201,7 +201,7 @@
 
 @media screen and (max-width: 1199px) {
     .body {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
     .cardOne {
@@ -227,6 +227,10 @@
 }
 
 @media screen and (max-width: 991px) {
+    .body {
+        grid-template-columns: 1fr;
+    }
+
     .cardOne {
         height: 431px;
         width: 470px;    

@@ -7,7 +7,7 @@ import locationVector from '../../../../assets/icons/locationVector.svg'
 
 function CompanyObjects() {
     return (
-        <div className={styles.container}>
+        <div id="objects" className={styles.container}>
             <div className={styles.wrapper}>
             <div className={styles.card}>
                 <div className={styles.imgBlock}>

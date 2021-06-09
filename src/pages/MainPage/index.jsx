@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import styles from './styles.module.scss'
 import Header from './components/Header'
 import About from './components/About'
@@ -12,17 +11,11 @@ function MainPage() {
     return (
         <div className={styles.container}>
             <Header />
-
             <About />
-
             <ApartmentBlock />
-
             <Location />
-
             <RequestCall />
-
             <Map />
-
             <Footer />
         </div>
     )
