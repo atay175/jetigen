@@ -47,6 +47,16 @@
     color: #FFFFFF;
 }
 
+.false {
+    font-family: "Akrobat-Regular";
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-decoration: none;
+    color: #ffffff59;
+}
+
 .contentBlockTwo {
     width: 20%;
     display: flex;
@@ -179,13 +189,13 @@
     .wrapper {
         max-width: 574px;
     }
-
   
     .contentBlockOne {
         display: none;
     }
 
     .contentBlockTwo {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;

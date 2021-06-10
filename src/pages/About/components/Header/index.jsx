@@ -11,7 +11,7 @@ function Header() {
     const [modalActive, setModalActive] = useState(false)
 
     return (
-        <div className={styles.container}>
+        <div id="about" className={styles.container}>
             <div className={styles.wrapper}>
                 <header>
                     <Link className={styles.linkToMainPage} to='/'>
@@ -30,7 +30,7 @@ function Header() {
                 </header>
                 <div className={styles.body}>
                     <img src={jetigenlogo} alt="" />
-                    <button className={styles.bodyButton}>Подробнее</button>
+                    <Link to='/' className={styles.bodyButton}>Подробнее</Link>
                 </div>
                 <footer>
                     <button className={styles.footerButton} onClick={() => setModalActive(true)}><img src={requestcallBig} alt="" /></button>

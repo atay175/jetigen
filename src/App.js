@@ -8,6 +8,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={MainPage} />
           <Route path="/:component" component={About} />
+          <Route exact path="/:component" component={MainPage} />
         </Switch>
     </Router>
   );

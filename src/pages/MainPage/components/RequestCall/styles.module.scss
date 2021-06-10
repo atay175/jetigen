@@ -177,8 +177,12 @@ input::placeholder {
         flex-direction: row;
     }
 
-    .logo img {
-        width: 60px;
+    
+    .logo {
+        margin-right: 10px;
+        img{
+            width: 60px;
+        }
     }
 
     .textBlock {

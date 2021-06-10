@@ -9,7 +9,7 @@
     max-width: 1300px;
     width: 100%;
     height: calc(100% - 50px);
-    padding: 25px 0;
+    padding: 35px 15px 30px 45px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -92,6 +92,7 @@ header {
     outline: none;
     border: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 footer {

@@ -2,6 +2,7 @@ import styles from './styles.module.scss'
 import apartmentCardCircleTopRight from '../../../../assets/images/apartmentCardCircleTopRight.png'
 import apartmentCardCircleMiddleLeft from '../../../../assets/images/apartmentCardCircleMiddleLeft.png'
 import apartmentCardCircleBottomRight from '../../../../assets/images/apartmentCardCircleBottomRight.png'
+import { Link } from 'react-router-dom'
 
 function ApartmentCard({apartmentScheme, title, area, description, link}) {
     return (
@@ -16,7 +17,7 @@ function ApartmentCard({apartmentScheme, title, area, description, link}) {
                     <h1 className={styles.title}>{title}</h1>
                     <p className={styles.area}>{area}</p>
                     <p className={styles.description}>{description}</p>
-                    <a className={styles.link} href={link}>Подробнее</a>
+                    <Link to='/apartmentBlock' className={styles.link}>Подробнее</Link>
                 </div> 
             </div>
         </div>

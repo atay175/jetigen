@@ -12,7 +12,7 @@ import apartment3d54 from '../../assets/images/apartment3d54,76.png'
 import apartment3d51 from '../../assets/images/apartment3d51,39.png'
 import apartment3d43 from '../../assets/images/apartment3d43,19.png'
 import apartment3d32 from '../../assets/images/apartment3d32,89.png'
-import { clickToAboutCompanyBlock, clickToContcatsBlock, clickToCompanyProjectsBlock, clickToCompanyObjectsBlock } from '../../utils/helpers'
+import { clickToAboutCompanyBlock, clickToContcatsBlock, clickToCompanyProjectsBlock, clickToCompanyObjectsBlock, clickToAboutBlock } from '../../utils/helpers'
 import { useParams } from 'react-router-dom'
 
 function About() {
@@ -22,35 +22,35 @@ function About() {
             title: "Квартира 1 комната",
             area: "Общая площадь 32,89 м",
             description: "Все квартиры оснащены природным газом, горячим и холодным водоснабжением, центральной системой канализации",
-            link: "#"
+            link: "/apartmentBlock"
         },
         {
             apartmentScheme: apartment3d54,
             title: "Квартира 2 комнаты",
             area: "Общая площадь 54,76 м",
             description: "Все квартиры оснащены природным газом, горячим и холодным водоснабжением, центральной системой канализации",
-            link: "#"
+            link: "/apartmentBlock"
         },
         {
             apartmentScheme: apartment3d43,
             title: "Квартира 1 комната",
             area: "Общая площадь 43,19 м",
             description: "Все квартиры оснащены природным газом, горячим и холодным водоснабжением, центральной системой канализации",
-            link: "#"
+            link: "/apartmentBlock"
         },
         {
             apartmentScheme: apartment3d51,
             title: "Квартира 2 комнаты",
             area: "Общая площадь 51,39 м",
             description: "Все квартиры оснащены природным газом, горячим и холодным водоснабжением, центральной системой канализации",
-            link: "#"
+            link: "/apartmentBlock"
         }
     ]
 
     const { component } = useParams()
 
     useEffect(() => {
-        if (component === 'company') {
+        if (component === 'about-company') {
             clickToAboutCompanyBlock()
         } else if (component === 'projects') {
             clickToCompanyProjectsBlock()
@@ -58,6 +58,8 @@ function About() {
             clickToContcatsBlock()
         } else if (component === 'objects') {
             clickToCompanyObjectsBlock()
+        } else if (component === 'about') {
+            clickToAboutBlock()
         }
     }, [])
 

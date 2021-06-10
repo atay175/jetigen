@@ -111,13 +111,15 @@
     }
 }
 
-.swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+.swiper-button-next {
     right: 300px !important;
+    background: url(../../../../assets/icons/apartmentBlockNextButton.svg) !important;
     left: auto;
 }
 
-.swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+.swiper-button-prev {
     left: 300px !important;
+    background: url(../../../../assets/icons/apartmentBlockPrevButton.svg) !important;
     right: auto;
 }
 
@@ -230,7 +232,6 @@
     }
 
     .footerBlock {
-        flex-direction: column;
         align-items: center;
         margin: 0;
     }

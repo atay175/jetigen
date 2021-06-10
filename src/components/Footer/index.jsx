@@ -8,6 +8,7 @@ import React, { useState } from 'react'
 import Modal from '../../components/Modal'
 import instagram from '../../assets/icons/instagram.svg'
 import facebook from '../../assets/icons/facebook.svg'
+import classNames from 'classnames'
 
 function Footer() {
     const [modalActive, setModalActive] = useState(false)
@@ -28,11 +29,11 @@ function Footer() {
                     </div>
                     <div className={styles.textBlock}>
                         <p className={styles.title}>объекты</p>
-                        <p className={styles.text}>jetigen</p>
-                        <p className={styles.text}>элебаева(скоро)</p>
-                        <p className={styles.text}>sky(сокро)</p>
+                        <Link to='/about' className={styles.text}>jetigen</Link>
+                        <p className={styles.false}>элебаева(скоро)</p>
+                        <p className={styles.false}>sky(сокро)</p>
                     </div>
-                </div>
+              </div>
                 <div className={styles.contentBlockTwo}>
                     <div className={styles.mobileLogo}><img className={styles.mobileLogo} src={FooterLogo} alt="" /></div>
                     <div className={styles.contacts}><img src={location} alt="" /><p className={styles.contactsText}>Кыргызстан г. Бишкек </p></div>
