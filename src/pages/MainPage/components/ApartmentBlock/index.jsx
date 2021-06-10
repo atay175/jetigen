@@ -103,16 +103,22 @@ function ApartmentBlock({flatNumber, area, img, }) {
                                     </button>
                                 </div>
                                 <div className={styles.planChoose}>
-                                    {/* <button 
+                                    <button 
                                         className={classNames(styles.planChooseButton, {
-                                            [styles.activePlanChooseButton]: scheme === 
+                                            [styles.activePlanChooseButton]: isScheme === 'plan'
                                         })} 
                                         onClick={() => setScheme('plan')}
                                     >
                                         планировка
-                                    </button> */}
-                                    <button className={styles.planChooseButton} onClick={() => setScheme('plan')}>планировка</button>
-                                    <button className={styles.planChooseButton} onClick={() => setScheme('3d')}>3D</button>
+                                    </button>
+                                    <button 
+                                        className={classNames(styles.planChooseButton, {
+                                            [styles.activePlanChooseButton]: isScheme === '3d'
+                                        })} 
+                                        onClick={() => setScheme('3d')}
+                                    >
+                                        3D
+                                    </button>
                                 </div>
                             </div>
                         </div>

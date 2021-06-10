@@ -61,6 +61,8 @@
 }
 
 .activeFlatChooseButton {
+    transition-property: left right;
+    transition-duration: 0.5s;
     background: rgba(255, 184, 0, 0.44);
     border: 2px solid #7D241E;
 }
@@ -79,10 +81,13 @@
     outline: none;
     border: none;
     cursor: pointer;
+    margin: 0 40px;
 }
 
 .activePlanChooseButton {
-    text-decoration: underline #FFB800 2px solid;
+    transition-property: left right;
+    transition-duration: 0.5s;
+    text-decoration: underline #FFB800 3px solid;
 }
 
 .slide {

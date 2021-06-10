@@ -2,6 +2,8 @@ import styles from './styles.module.scss'
 import classNames from 'classnames'
 import closeModal from '../../assets/icons/close-modal.svg'
 import IMask from 'imask';
+import InputMask from 'react-input-mask';
+
 
 const Modal = ({active, setActive}) => {
 
@@ -12,6 +14,8 @@ const Modal = ({active, setActive}) => {
         };
         let mask = IMask(element, maskOptions);
     }
+
+
 
     function addPost(e){
         e.preventDefault();
