@@ -7,23 +7,17 @@ import IMask from 'imask';
 function requestCall() {
 
     function phoneMask () {
-        let element = document.getElementById('phoneMask');
+        let element = document.getElementById('phoneMask#1');
         let maskOptions = {
         mask: '+{996}(000)000-000'
         };
         let mask = IMask(element, maskOptions);
     }
 
-   
-
-
-
     function addPost(e){
         e.preventDefault();
-
-        let userName = document.getElementById('userName').value;
-        let phoneNumber = document.getElementById('phoneMask').value;
-
+        let userName = document.getElementById('userName#1').value;
+        let phoneNumber = document.getElementById('phoneMask#1').value;
         fetch('https://jsonplaceholder.typicode.com/posts', {
             method:'POST',
             headers: {
@@ -36,14 +30,9 @@ function requestCall() {
         .then((data) => console.log(data))
     }
         
-    
-       
-    
     return (
         <div className={styles.container}>
-         
             <div className={styles.wrapper}>
-
                 <div className={styles.headerBlock}>
                     <div className={styles.logo}>
                         <img src={logo} alt="" />
@@ -53,30 +42,22 @@ function requestCall() {
                             <p className={styles.subTitle}>Мы свяжемся с вами для личной консультации</p>
                     </div>
                 </div>
-               
-
                 <div className={styles.body}>
               
                     <div className={styles.actionBlock}>
-
                         <div className={styles.inputBlock}>
                             <p className={styles.text}>Введите имя</p>
-                            <input type="text" id="userName" placeholder='Ваше имя' />
+                            <input type="text" id="userName#1" placeholder='Ваше имя' />
                         </div>
-
                         <div className={styles.inputBlock}>
                             <p className={styles.text}>Введите номер телефона</p>
-                            <input onClick={phoneMask} id="phoneMask" type="text" placeholder='+996 _ _ _   _ _ _  _ _ _' />
+                            <input onClick={phoneMask} id="phoneMask#1" type="text" placeholder='+996 _ _ _   _ _ _  _ _ _' />
                         </div>
-
                         <button onClick={addPost} className={styles.bodyButton} value="submit">Оставить заявку</button>
                     </div>
                 </div>
-
             </div>
-
         </div>
-
     )
 }
 

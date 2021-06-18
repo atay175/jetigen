@@ -13,11 +13,11 @@ import { useParams } from 'react-router-dom'
 function MainPage() {
     const { component } = useParams()
 
-    useEffect(() => {
-        if (component === 'apartmentBlock') {
-            clickToApartmentBlock()
-        }
-    }, [])
+    // useEffect(() => {
+    //     if (component === 'apartmentBlock') {
+    //         clickToApartmentBlock()
+    //     }
+    // }, [])
     
     return (
         <div className={styles.container}>

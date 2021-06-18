@@ -59,8 +59,8 @@ function Header() {
                     <div className={styles.burgerMenu} onClick={() => setBurgerMenuActive(true)}><img src={burgerIcon} alt="" /></div>
                 </header>
                 <div className={styles.body}>
-                    <img src={jetigenlogo} alt="JetigenLogo" />
-                    <Link to='/about'><button className={styles.bodyButton}>Подробнее</button></Link> 
+                        <img src={jetigenlogo} alt="JetigenLogo" />
+                        <Link to='/about'><button className={styles.bodyButton}>Подробнее</button></Link> 
                 </div>
                 <footer className={styles.footer}>
                     <div className={styles.companyContentBlock}>

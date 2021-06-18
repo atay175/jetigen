@@ -1,0 +1,29 @@
+.swiper-button-next {
+    right: 300px !important;
+    background: url(../../../../assets/icons/apartmentBlockNextButton.svg) !important;
+    left: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.swiper-button-next::after {
+    content: "";
+}
+
+.swiper-button-prev {
+    left: 300px !important;
+    background: url(../../../../assets/icons/apartmentBlockPrevButton.svg) !important;
+    right: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.swiper-button-prev::after {
+    content: "";
+}
+
+:root {
+    --swiper-theme-color: #FFB800;
+}

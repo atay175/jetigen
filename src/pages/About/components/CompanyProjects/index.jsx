@@ -48,7 +48,7 @@ function CompanyProjects() {
                       <div className={styles.img}>
                         <img src={berekeWhite} alt="" />
                       </div>
-                      <button className={styles.button}>Подробнее</button>
+                      {/* <button className={styles.button}>Подробнее</button> */}
                     </div>
                   </div>
                 </SwiperSlide>
@@ -59,7 +59,7 @@ function CompanyProjects() {
                       <div className={styles.img}>
                         <img src={berekeWhite1} alt="" />
                       </div>
-                      <button className={styles.button}>Подробнее</button>
+                      {/* <button className={styles.button}>Подробнее</button> */}
                     </div>
                   </div>
                 </SwiperSlide>
@@ -70,7 +70,7 @@ function CompanyProjects() {
                       <div className={styles.img}>
                         <img src={keremetConstruction} alt="" />
                       </div>
-                      <button className={styles.button}>Подробнее</button>
+                      {/* <button className={styles.button}>Подробнее</button> */}
                     </div>
                   </div>
                 </SwiperSlide>
@@ -81,7 +81,7 @@ function CompanyProjects() {
                       <div className={styles.img}>
                         <img  src={AVAWhite} alt="" />
                       </div>
-                      <button className={styles.button}>Подробнее</button>
+                      {/* <button className={styles.button}>Подробнее</button> */}
                     </div>
                   </div>
                 </SwiperSlide>

@@ -127,29 +127,34 @@ header {
 }
 
 .body {
-    height: fit-content;
     width: fit-content;
+    height: fit-content;
     display: flex;
     flex-direction: column;
+
+    .body img {
+        width: fit-content;
+    }
+
+    .bodyButton {
+        margin-top: 30px;
+        font-family: 'Akrobat-Bold';
+        font-size: 24px;
+        padding: 10px 50px;
+        color: #7D241E;
+        background-color: #FFB800;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    .bodyButton:hover {
+        transform: scale(1.1);
+        transition: .3s;
+    }
 }
 
-.bodyButton {
-    margin-top: 30px;
-    font-family: 'Akrobat-Bold';
-    font-size: 24px;
-    padding: 10px 50px;
-    color: #7D241E;
-    background-color: #FFB800;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-}
 
-.bodyButton:hover {
-    transform: scale(1.1);
-    transition: .3s;
-}
 
 .footer {
     width: 100%;
@@ -330,11 +335,14 @@ header {
         max-width: 525px;
         width: 90%;
         padding: 20px 0 0 20px;
+        height: 97vh;
     }
 
     header {
         width: 90%;
     }
+
+    
 
     .navigation {
         display: none;
@@ -345,6 +353,20 @@ header {
         cursor: pointer;
     }
 
+    .body {
+        align-items: center;
+
+        img {
+        width: 84px;
+        height: 66px;
+        }
+        
+        button {
+            margin-top:  10px !important;
+            padding: 6px 29px !important;
+            font-size: 18px !important;
+        }
+    }
 
     .companyContentBlock {
         display: none;
@@ -360,5 +382,9 @@ header {
 
     .linkBlock {
         align-items: flex-end;
+    }
+
+    .gradient{
+        height: 130px;
     }
 }

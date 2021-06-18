@@ -21,6 +21,7 @@ import apartment3d32 from '../../../../assets/images/apartment3d32,89.png'
 import pdf from '../../../../assets/appartments-plan PDF.pdf'
 import Modal from '../../../../components/Modal'
 import apartmentSchem from '../../../../assets/icons/apartmentBlockSchem.svg'
+import style from './ apartmentSwiper.css'
 
 SwiperCore.use([Navigation, Pagination, A11y]);
 

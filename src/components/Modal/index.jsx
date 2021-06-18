@@ -2,27 +2,23 @@ import styles from './styles.module.scss'
 import classNames from 'classnames'
 import closeModal from '../../assets/icons/close-modal.svg'
 import IMask from 'imask';
-import InputMask from 'react-input-mask';
+
 
 
 const Modal = ({active, setActive}) => {
 
     function phoneMask () {
-        let element = document.getElementsByClassName('phoneMask');
+        let element = document.getElementById('phoneMask');
         let maskOptions = {
         mask: '+{996}(000)000-000'
         };
         let mask = IMask(element, maskOptions);
     }
 
-
-
     function addPost(e){
         e.preventDefault();
-
-        let userName = document.getElementsByClassName('userName').value;
-        let phoneNumber = document.getElementsByClassName('phoneMask').value;
-
+        let userName = document.getElementById('userName').value;
+        let phoneNumber = document.getElementById('phoneMask').value;
         fetch('https://jsonplaceholder.typicode.com/posts', {
             method:'POST',
             headers: {
@@ -47,7 +43,9 @@ const Modal = ({active, setActive}) => {
                 <button className={styles.closeButton} onClick={() => setActive(false)}><img src={closeModal} alt="" /></button>
                 <div className={styles.inputBlock}>
                     <p className={styles.modalText}>Введите имя</p>
-                    <input className={classNames(
+                    <input
+                    id='userName'
+                    className={classNames(
                          styles.input,
                          styles.userName
                     )} 
@@ -57,7 +55,9 @@ const Modal = ({active, setActive}) => {
                 </div>
                 <div className={styles.inputBlock}>
                     <p className={styles.modalText}>Введите номер телефона</p>
-                    <input className={classNames(
+                    <input 
+                    id='phoneMask'
+                    className={classNames(
                         styles.input,
                         styles.phoneMask
                     )} 

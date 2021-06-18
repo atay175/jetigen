@@ -23,7 +23,7 @@ export function clickToCompanyObjectsBlock() {
     window.scrollTo({ top: element.offsetTop, behavior: "smooth" });
 }
 
-export function clickToApartmentBlock() {
-    let element = document.getElementById('apartmentBlock');
-    window.scrollTo({ top: element.offsetTop, behavior: "smooth" });
-}
+// export function clickToApartmentBlock() {
+//     let element = document.getElementById('apartmentBlock');
+//     window.scrollTo({ top: element.offsetTop, behavior: "smooth" });
+// }

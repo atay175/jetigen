@@ -68,3 +68,31 @@ class SimpleMap extends Component {
 }
 
 export default SimpleMap;
+
+
+// export class GoogleMap extends React.Component {
+
+//   render() {
+//     const mapStyles = {
+//       width: "100%",
+//       height: "733px",
+//     };
+
+//     return (
+//       <div className={styles.container}>
+//         <div className={styles.wrapper}>
+//           <Map
+//             google={this.props.google}
+//             zoom={11}
+//             style={mapStyles}
+//             initialCenter={{ lat: 42.85131122452014, lng: 74.5926293846526 }}
+//           >
+//             <Marker position={{ lat: 42.85131122452014, lng: 74.5926293846526 }} />
+//           </Map>
+//         </div>
+//       </div>
+     
+//     );
+//   }
+  
+// }

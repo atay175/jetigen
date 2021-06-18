@@ -15,6 +15,7 @@ import apartment3d32 from '../../assets/images/apartment3d32,89.png'
 import { clickToAboutCompanyBlock, clickToContcatsBlock, clickToCompanyProjectsBlock, clickToCompanyObjectsBlock, clickToAboutBlock } from '../../utils/helpers'
 import { useParams } from 'react-router-dom'
 
+
 function About() {
     const data = [
         {
@@ -50,7 +51,7 @@ function About() {
     const { component } = useParams()
 
     useEffect(() => {
-        if (component === 'about-company') {
+        if (component === 'aboutCompany') {
             clickToAboutCompanyBlock()
         } else if (component === 'projects') {
             clickToCompanyProjectsBlock()
