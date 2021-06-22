@@ -1,10 +1,3 @@
-.wrapper {
-    height: 460px;
-    width: 480px;
-    background: #fff;
-    border-radius: 5px;
-}
-
 .modal {
     height: 100vh;
     width: 100%;
@@ -19,6 +12,13 @@
     transform: scale(0);
 }
 
+.wrapper {
+    height: 460px;
+    width: 480px;
+    background: #fff;
+    border-radius: 5px;
+}
+
 .active {
     transform: scale(1);
     transition: transform .2s ease 0s,opacity .2s ease 0s;
@@ -30,7 +30,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(../../assets/images/requestCallIMG.png) top;
+    background: url(../../assets/images/requestCallIMG.png) center top;
     height: 460px;
     width: 480px;
     opacity: 1;
@@ -89,4 +89,62 @@
     outline: none;
     border: none;
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 575px) {
+    .wrapper {
+        height: 270px;
+        width: 290px;
+        background: #fff;
+        border-radius: 5px;
+    }
+
+    .modal__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: url(../../assets/images/requestCallIMG.png) top;
+        height: 270px;
+        width: 290px;
+        opacity: 1;
+    }
+
+    .closeButton {
+        position: relative;
+        z-index: 10;
+        top: 15px;
+        right: -105px;
+        width: 15px;
+        height: 15px;
+        
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .modalText {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .input {
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+    
+    .input ::placeholder {
+        color: #6C6C6C;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .modalButton {
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 10px 30px;
+    }
 }

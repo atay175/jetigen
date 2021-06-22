@@ -7,7 +7,7 @@ function CompanyDescription() {
             <div className={styles.wrapper}>
                 <div className={styles.CompanyDescription}>
                     <div className={styles.imgBlock}>
-                        <div className={styles.img}><img src={companyDescriptioneIMG} alt="" /></div>
+                        <img className={styles.img} src={companyDescriptioneIMG} alt="" />
                     </div>
                     <div className={styles.textBlock}>
                         <h1 className={styles.title}> о компании</h1>

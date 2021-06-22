@@ -2,6 +2,7 @@ import styles from './styles.module.scss'
 import classNames from 'classnames'
 import closeModal from '../../assets/icons/close-modal.svg'
 import IMask from 'imask';
+import InputMask from 'react-input-mask';
 
 
 
@@ -55,15 +56,15 @@ const Modal = ({active, setActive}) => {
                 </div>
                 <div className={styles.inputBlock}>
                     <p className={styles.modalText}>Введите номер телефона</p>
-                    <input 
-                    id='phoneMask'
-                    className={classNames(
+                      <InputMask className={classNames(
                         styles.input,
                         styles.phoneMask
-                    )} 
-                    onClick={phoneMask}
-                    type="text"  
-                    placeholder='+996 _ _ _   _ _ _  _ _ _'
+                    )}
+                        mask = '+996 777 777 777'
+                        maskChar = '-'
+                        alwaysShowMask = {false}
+                        formatChars ={{'7': '[0-9]'}}
+                        placeholder = "+996 _ _ _   _ _ _  _ _ _"
                     />
                 </div>
                 <button className={styles.modalButton} onClick={addPost}>Оставить заявку</button>

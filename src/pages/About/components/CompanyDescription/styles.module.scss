@@ -21,6 +21,10 @@
     width: 40%;
 }
 
+.img {
+    width: 100%;
+}
+
 .textBlock {
     width: 55%;
     display: flex;
@@ -43,4 +47,31 @@
     font-family: 'Akrobat-Regular';
     color: #424242;
     font-size: 24px;
+}
+
+@media screen and (max-width: 1199px) {
+    .wrapper {
+        width: 100%;
+        max-width: 992px;
+    }
+
+    .title {
+        font-size: 60px;
+    }
+
+    .descriptionBlock {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    
+}
+
+@media screen and (max-width: 767px) {
+    
+}
+
+@media screen and (max-width: 575px) {
+    
 }

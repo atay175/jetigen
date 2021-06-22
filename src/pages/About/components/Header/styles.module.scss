@@ -107,3 +107,182 @@ footer {
     outline: none;
     border: none;
 }
+
+@media screen and (max-width: 1199px) {
+    .wrapper {
+        max-width: 992px;
+        margin:  0 auto;
+        padding: 30px 0 40px 45px;
+    }
+
+    header {
+        max-width: 900px;
+    }
+
+    .logo {
+        width: fit-content;
+    }
+
+    .logo img {
+        width: 60px;
+    }
+
+    .navigation {
+        width:80%;
+    }
+
+    .navigationLink {
+        font-size: 17px;
+    }
+
+    .navigationButton {
+        padding: 6px 12px;
+        font-size: 20px;
+    }
+
+    .buttonImg {
+        width: 17px;
+    }
+
+    .navigationText {
+        font-size: 17px;
+    }
+
+    .body {
+        max-width: 900px;
+    }
+
+    .body img {
+        width: 180px;
+    }
+
+    .bodyButton {
+        font-size: 20px;
+        margin-top: 20px;
+        padding: 10px 40px;
+    }
+
+    .text {
+        font-size: 20px;
+    }
+
+    footer {
+        max-width: 900px;
+    }
+
+    .socialImg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .modalButton img {
+        width: 65px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .wrapper {
+        max-width: 901px;
+        padding: 45px 0 0 0 ;
+    }
+
+    header {
+        max-width: 768px;
+    }
+
+    .navigationText {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper{
+        max-width: 535px;
+        padding: 20px;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .burgerMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .companyContentBlock {
+        display: none;
+    }
+
+    .footer {
+        justify-content: flex-end;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .linkBlock {
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .wrapper {
+        max-width: 525px;
+        width: 90%;
+        padding: 20px 0 0 20px;
+        height: 97vh;
+    }
+
+    header {
+        width: 90%;
+    }
+
+    
+
+    .navigation {
+        display: none;
+    }
+
+    .burgerMenu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .body {
+        align-items: center;
+
+        img {
+        width: 84px;
+        height: 66px;
+        }
+        
+        button {
+            margin-top:  10px !important;
+            padding: 6px 29px !important;
+            font-size: 18px !important;
+        }
+    }
+
+    .companyContentBlock {
+        display: none;
+    }
+
+    .footer {
+        justify-content: flex-end;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .linkBlock {
+        align-items: flex-end;
+    }
+
+    .gradient{
+        height: 130px;
+    }
+}

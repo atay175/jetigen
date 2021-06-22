@@ -69,6 +69,7 @@ input {
     border: 0.5px solid #000000;
     border-radius: 5px;
     font-size: 18px;
+    color: #6C6C6C;
 }
 
 input::placeholder {
@@ -93,7 +94,6 @@ input::placeholder {
     .wrapper {
         max-width: 992px;
     }
-
 }
 
 @media screen and (max-width: 991px) {
@@ -176,7 +176,6 @@ input::placeholder {
         display: flex;
         flex-direction: row;
     }
-
     
     .logo {
         margin-right: 10px;

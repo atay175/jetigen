@@ -119,3 +119,33 @@
         text-align: right;
     }
 }
+
+
+@media screen and (max-width: 1199px) {
+    
+    .title {
+        height: 35%;
+        font-size: 60px;
+    }
+
+    .imgBlock {
+        width: 60%;
+    }
+
+    .textBlock {
+        width: 40%;
+    }
+
+    .descriptionBlock {
+        height: 65%;
+        font-size: 20px;
+    }
+
+    .card {
+        height: 375px;
+    }
+
+    .title {
+        font-size: 70px;
+    }
+}
