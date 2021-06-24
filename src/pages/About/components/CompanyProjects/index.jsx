@@ -25,7 +25,6 @@ function CompanyProjects() {
               <Swiper
                 spaceBetween={30}
                 slidesPerView={2.5}
-                navigation
                 scrollbar={{ draggable: true }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log('slide change')}

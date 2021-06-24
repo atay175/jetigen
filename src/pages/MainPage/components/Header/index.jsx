@@ -64,12 +64,12 @@ function Header() {
                 </div>
                 <footer className={styles.footer}>
                     <div className={styles.companyContentBlock}>
-                        <div className={styles.companyProjects}><img src={companyProjectsLogo} alt="" /><p className={styles.text}>Наши проекты</p></div>
+                        <Link to='./projects'><div className={styles.companyProjects}><img src={companyProjectsLogo} alt="" /><p className={styles.text}>Наши проекты</p></div></Link>
                         <div className={styles.companyLogoFooter}><img src={AAAWhite} alt="" /><p className={styles.text}>A.A.A <br />STROY GROUP</p></div>
                     </div>
                     <div className={styles.linkBlock}>
-                        <a className={styles.social} href="#"><img className={styles.socialImg} src={facebook} alt="" /></a>
-                        <a className={styles.social} href="#"><img className={styles.socialImg} src={instagram} alt="" /></a>
+                        <a className={styles.social} href="https://www.facebook.com/aaastroygroup.kg"><img className={styles.socialImg} src={facebook} alt="" /></a>
+                        <a className={styles.social} href="https://www.instagram.com/aaa.stroy.group/"><img className={styles.socialImg} src={instagram} alt="" /></a>
                         <button className={styles.modalButton}><img src={requestcallBig} onClick={() => setModalActive(true)} alt="" /></button>
                     </div>
                 </footer>

@@ -27,3 +27,44 @@
 :root {
     --swiper-theme-color: #FFB800;
 }
+
+@media screen and (max-width: 1199px) {
+    .swiper-button-next {
+        right: 190px !important;
+    }
+
+    .swiper-button-prev {
+        left: 190px !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .swiper-button-next {
+        right: 100px !important;
+    }
+
+    .swiper-button-prev {
+        left: 100px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .swiper-button-next {
+        right: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: 0 !important;
+    }
+}
+
+
+@media screen and (max-width: 575px) {
+    .swiper-button-next {
+        right: 0 !important;
+    }
+
+    .swiper-button-prev {
+        left: 0 !important;
+    }
+}

@@ -167,6 +167,9 @@ header {
 .companyContentBlock {
     display: flex;
     align-items: center;
+    a {
+        text-decoration: none;
+    }
 }
 
 .companyContentBlock div {
